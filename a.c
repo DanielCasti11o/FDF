@@ -6,7 +6,7 @@
 /*   By: dacastil <dacastil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 18:20:38 by dacastil          #+#    #+#             */
-/*   Updated: 2025/02/12 20:22:59 by dacastil         ###   ########.fr       */
+/*   Updated: 2025/02/13 20:15:02 by dacastil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ int	main(void)
 	// mlx_key_hook(vars.win, key_hook, &vars);
 	while (i < EJE_X && i < EJE_Y)
 	{
-		mlx_pixel_put(vars.mlx, vars.win, i, i, 0xFFFF00);
-		mlx_pixel_put(vars.mlx, vars.win, 1, i, 0xFFFFFF);
+		mlx_pixel_put(vars.mlx, vars.win, 100, i, 0xFFFF00);
+		mlx_pixel_put(vars.mlx, vars.win, i, i, 0xFFFFFF);
 		i++;
 	}
 

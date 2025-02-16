@@ -6,7 +6,7 @@
 /*   By: dacastil <dacastil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 17:53:02 by dacastil          #+#    #+#             */
-/*   Updated: 2025/02/13 12:51:05 by dacastil         ###   ########.fr       */
+/*   Updated: 2025/02/15 23:06:36 by dacastil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # include <stdio.h>
 # include <fcntl.h>
 # include <unistd.h>
+# include "get_next_line_bonus.h"
 
 typedef struct	s_ejes
 {
@@ -37,5 +38,16 @@ typedef struct	s_vars
 	void	*win;
 }				t_vars;
 
+int		ft_strlcpy(char *dst, const char *src, size_t size);
+char	*ft_strdup(const char *s);
+int		count_lines(int fd, int *len);
+char	**init_map(int fd, int i, int *len);
+int		**matx_to_arr(char **lines, int i, int *len);
+int		*lengs(int i, int fd);
+void	fr_words(char **wds);
+int		ft_atoi(const char *nptr);
+int		*atoi_ptr(int *ptr, char *str, int spaces, int len);
+int		count_spaces(char *line);
+char	**ft_split(char const *s, char c);
 
 #endif

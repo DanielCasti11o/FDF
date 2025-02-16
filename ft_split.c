@@ -6,11 +6,11 @@
 /*   By: dacastil <dacastil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 14:32:11 by daniel-cast       #+#    #+#             */
-/*   Updated: 2025/02/03 20:11:43 by dacastil         ###   ########.fr       */
+/*   Updated: 2025/02/13 20:46:06 by dacastil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "fdf.h"
 
 static void	free_parcial(char **splres, int i)
 {
